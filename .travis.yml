@@ -6,6 +6,6 @@ before_install:
   - pip install pep8
 install:
   - python setup.py install
-scripts:
+script:
   - pep8 app.py infra_data service_data
 
