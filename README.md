@@ -1,4 +1,4 @@
-https://travis-ci.org/SiahGD/aws-reporter.svg?branch=master
+[![Build Status](https://travis-ci.org/SiahGD/aws-reporter.svg?branch=master)](https://travis-ci.org/SiahGD/aws-reporter)
 
 # aws-reporter
 Generates reports
