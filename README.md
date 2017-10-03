@@ -1,3 +1,5 @@
+https://travis-ci.org/SiahGD/aws-reporter.svg?branch=master
+
 # aws-reporter
 Generates reports
 
