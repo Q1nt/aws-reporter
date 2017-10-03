@@ -19,6 +19,7 @@ def bucket_report(pth):
             for r in response['Buckets']:
                 try:
                     with open(pth, "a") as myfile:
-                        myfile.write(account + ',' + region + ',' + r['Name'] + '\n')
+                        myfile.write(account + ',' + region + ',' +
+                                     r['Name'] + '\n')
                 except Exception, msg:
                     print (str(msg))

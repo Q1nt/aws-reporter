@@ -7,9 +7,9 @@ from service_data.rds import rds_report
 from service_data.lb import lb_report
 from service_data.iam import iam_report
 
-
 fname = '-' + time.strftime("%d-%m-%Y") + '.csv'
 report_path = os.path.dirname(os.path.abspath(__file__))
+
 
 # get S3 bucket list
 # s3.bucket_report(report_path + '/s3_report' + fname)
@@ -38,4 +38,3 @@ def ec2():
     """Generates ec2 report"""
     click.echo("Going to generate ec2 report")
     ec2_report(report_path + '/rds_report' + fname)
-

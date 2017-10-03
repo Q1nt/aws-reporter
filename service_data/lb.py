@@ -17,6 +17,7 @@ def lb_report(pth):
             for r in response['LoadBalancerDescriptions']:
                 try:
                     with open(pth, "a") as myfile:
-                        myfile.write(account + ',' + region + ',' + r['CanonicalHostedZoneName'] + '\n')
+                        myfile.write(account + ',' + region + ',' +
+                                     r['CanonicalHostedZoneName'] + '\n')
                 except Exception, msg:
                     print (msg)

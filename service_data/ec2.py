@@ -33,7 +33,9 @@ def ec2_report(pth):
 
                         with open(pth, "a") as myfile:
                             myfile.write(account + ',' + region + ',' + i[
-                                'InstanceId'] + ',' + instance_name + ',' + instance_site + ',' + str(
-                                i.get('PublicIpAddress')) + ',' + str(i.get('PrivateIpAddress')) + '\n')
+                                'InstanceId'] + ',' + instance_name + ',' +
+                                         instance_site + ',' + str(
+                                i.get('PublicIpAddress')) + ',' +
+                                         str(i.get('PrivateIpAddress')) + '\n')
                     except Exception, msg:
                         print (msg)

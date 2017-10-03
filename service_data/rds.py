@@ -20,6 +20,8 @@ def rds_report(pth):
                 try:
                     with open(pth, "a") as myfile:
                         myfile.write(
-                            account + ',' + region + ',' + r['Endpoint']['Address'] + ',' + r['LicenseModel'] + '\n')
+                            account + ',' + region + ',' +
+                            r['Endpoint']['Address'] + ',' +
+                            r['LicenseModel'] + '\n')
                 except Exception, msg:
                     print (str(msg))

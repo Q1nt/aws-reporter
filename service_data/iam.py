@@ -13,6 +13,7 @@ def iam_report(pth):
         for r in response['Users']:
             try:
                 with open(pth, "a") as myfile:
-                    myfile.write(account + ',' + r['UserName'] + ',' + str(r['CreateDate'].date()) + '\n')
+                    myfile.write(account + ',' + r['UserName'] + ',' +
+                                 str(r['CreateDate'].date()) + '\n')
             except Exception, msg:
                 print (str(msg))
